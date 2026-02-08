@@ -1,0 +1,12 @@
+<!-- Placeholder for export modal image -->
+<!-- This should be replaced with an actual screenshot of the export options -->
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1e293b"/>
+  <rect x="20" y="20" width="360" height="260" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <text x="200" y="150" text-anchor="middle" fill="#6366f1" font-family="system-ui" font-size="20" font-weight="600">
+    Export Options
+  </text>
+  <text x="200" y="180" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="14">
+    Modal Screenshot
+  </text>
+</svg>

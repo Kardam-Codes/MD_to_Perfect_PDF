@@ -1,0 +1,29 @@
+<!-- Placeholder for Open Graph image -->
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020617"/>
+  <rect x="60" y="60" width="1080" height="510" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  
+  <!-- Icon -->
+  <rect x="570" y="180" width="60" height="60" fill="#6366f1" rx="8"/>
+  <text x="600" y="220" text-anchor="middle" fill="white" font-family="system-ui" font-size="24" font-weight="700">
+    MD
+  </text>
+  
+  <!-- Title -->
+  <text x="600" y="280" text-anchor="middle" fill="#f8fafc" font-family="system-ui" font-size="48" font-weight="700">
+    Turn Markdown into
+  </text>
+  <text x="600" y="340" text-anchor="middle" fill="#6366f1" font-family="system-ui" font-size="48" font-weight="700">
+    Clean, Print-Ready PDFs
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="400" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="24">
+    Privacy-first Chrome Extension for Developers
+  </text>
+  
+  <!-- Features -->
+  <text x="600" y="480" text-anchor="middle" fill="#22c55e" font-family="system-ui" font-size="20" font-weight="500">
+    ✓ 100% Local Processing  ✓ No Uploads  ✓ Free Forever
+  </text>
+</svg>

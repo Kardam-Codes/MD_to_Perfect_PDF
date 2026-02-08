@@ -4,6 +4,9 @@ Turn Markdown into **clean, beautiful, print‑ready PDFs** — with full contro
 
 This project is a **local-first Chrome Extension + PDF server** designed for people who care about *readability*, *formatting*, and *professional output*.
 
+🚀 **[Get it Free on Chrome Web Store](https://chrome.google.com/webstore/detail/md-to-perfect-pdf/EXTENSION_ID)**  
+🌐 **[Visit our Landing Page](https://kardam-codes.github.io/MD_to_Perfect_PDF/website/)**
+
 ---
 
 ## ✨ Why This Exists
@@ -114,7 +117,7 @@ The editor supports a simple environment toggle.
 ## 🗂️ Project Structure
 
 ```
-ChatGPT_PDF_Extension/
+MD_to_Perfect_PDF/
 ├─ extension/
 │  ├─ editor.html
 │  ├─ editor.css
@@ -129,6 +132,18 @@ ChatGPT_PDF_Extension/
 │  ├─ server.js
 │  ├─ package.json
 │  └─ node_modules/ (ignored)
+│
+├─ website/                 # 🆕 Landing page
+│  ├─ index.html            # Main landing page
+│  ├─ style.css             # Design system
+│  ├─ script.js             # Interactions
+│  ├─ privacy.html          # Privacy policy
+│  ├─ test.html             # Test results
+│  └─ assets/               # Images & icons
+│     ├─ hero-demo.webp      # Hero screenshot
+│     ├─ export-modal.webp   # Export options
+│     ├─ og-image.png       # Social sharing
+│     └─ icon-128.png        # Extension icon
 │
 ├─ .gitignore
 └─ README.md
@@ -167,8 +182,8 @@ Nothing is uploaded anywhere. Everything runs locally.
 ### 🔹 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/chatgpt-perfect-pdf.git
-cd chatgpt-perfect-pdf
+git clone https://github.com/Kardam-Codes/MD_to_Perfect_PDF.git
+cd MD_to_Perfect_PDF
 ```
 
 ---
@@ -240,6 +255,53 @@ Extension not loading?
 * **Predictable rendering** → what you see is what you print
 * **Minimal UI** → content always comes first
 * **Extensible architecture** → future features easy to add
+
+---
+
+## 🌐 Landing Page
+
+This repository now includes a **production-ready landing page** in the `website/` folder:
+
+### Features
+- ✅ **Responsive Design** - Works perfectly on mobile, tablet, and desktop
+- ✅ **Dark Theme** - Matches the extension's design philosophy  
+- ✅ **Privacy First** - No external dependencies or tracking
+- ✅ **SEO Optimized** - Meta tags, Open Graph, Twitter Cards
+- ✅ **Interactive Elements** - Smooth scroll, animations, keyboard shortcuts
+- ✅ **Accessibility** - WCAG AA compliant, screen reader friendly
+- ✅ **Fast Loading** - < 2s initial load, no external dependencies
+
+### Sections
+1. Hero with CTA and trust badges
+2. Problem → Solution comparison  
+3. Features grid (6 cards)
+4. How It Works (4 steps)
+5. Export Options showcase
+6. Privacy promise section
+7. Final CTA
+8. Footer with links
+
+### View the Landing Page
+- **Local Preview:** Open `website/index.html` in your browser
+- **Live Demo:** [View on GitHub Pages](https://kardam-codes.github.io/MD_to_Perfect_PDF/website/)
+
+---
+
+## 🚀 Deployment
+
+### Landing Page Deployment
+
+#### GitHub Pages (Recommended)
+1. Push to GitHub (this repo)
+2. Go to Settings → Pages
+3. Source: Deploy from a branch
+4. Branch: main, folder: `/website`
+5. Your site will be available at the GitHub Pages URL
+
+#### Other Options
+- **Netlify:** Drag-drop the `website/` folder
+- **Vercel:** Connect your GitHub repo
+- **Render:** Add as static site service
 
 ---
 
