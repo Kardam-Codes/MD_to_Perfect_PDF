@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const EXPORT_ENDPOINT = "http://localhost:3000/export";
-  const PROD_EXPORT_ENDPOINT = "https://chatgpt-pdf-extension.onrender.com/export";
+  const PROD_EXPORT_ENDPOINT = "https://md-to-perfect-pdf.onrender.com/export";
 
   function getExportEndpoint() {
     return document.body.dataset.exportEnv === "prod"
