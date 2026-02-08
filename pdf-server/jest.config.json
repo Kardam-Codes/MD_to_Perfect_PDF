@@ -1,0 +1,15 @@
+{
+  "extensionsToTreatAsEsm": [".js"],
+  "transform": {},
+  "testEnvironment": "node",
+  "collectCoverageFrom": [
+    "server.js",
+    "!node_modules/**"
+  ],
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["text", "lcov", "html"],
+  "moduleFileExtensions": ["js", "json"],
+  "transformIgnorePatterns": [
+    "node_modules/(?!(supertest)/)"
+  ]
+}

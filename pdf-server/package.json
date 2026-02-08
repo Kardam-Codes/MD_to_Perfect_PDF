@@ -5,15 +5,27 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node test-runner.js",
+    "test:watch": "node test-runner.js",
+    "test:coverage": "echo 'Coverage not implemented for simple test runner'",
+    "test:jest": "node --experimental-vm-modules node_modules/.bin/jest"
   },
-  "engines": {"node" : "18.x"},
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
     "puppeteer": "^24.36.1"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.2.2"
   }
 }

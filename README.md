@@ -81,10 +81,9 @@ The editor supports a simple environment toggle.
 * Paste Markdown directly
 * Edit Markdown freely
 * Instant preview with accurate formatting
+* Resizable editor/preview panels with persistence
 
 ### 🎨 Theme & Typography Control
-
-## 🎨 Theme & Font Controls
 
 * Toggle Light/Dark mode from the toolbar
 * Use + / − buttons to adjust preview font size
@@ -101,16 +100,31 @@ The editor supports a simple environment toggle.
 ### 📄 PDF Export
 
 * True page breaks using `--- ---`
-* Minimal margins
+* Multiple page sizes (A4, Letter, Legal)
+* Portrait/landscape orientations
+* Customizable margins (compact/normal/spacious)
+* Font selection (Inter, Roboto, Serif)
+* Headers and footers with page numbers
+* Date/time stamping option
 * Print‑friendly typography
 * Same styling as preview
 
+### 🔒 Security & Performance
+
+* Restricted CORS to known origins
+* Rate limiting (20 requests per 15 minutes)
+* Browser pooling for faster PDF generation
+* Input validation and HTML sanitization
+* Security headers and CSP protection
+* 100% local processing
+
 ### 🧠 UX Polish
 
-* Resizable editor / preview panels (with persistence)
 * Scroll‑sync between editor and preview
 * Empty‑state guidance
 * Custom scrollbars
+* Graceful error handling
+* Performance monitoring
 
 ---
 
@@ -207,6 +221,9 @@ You should see:
 
 ```
 📄 PDF server running at http://localhost:3000
+📊 Health check: http://localhost:3000/health
+🔒 Rate limiting: 20 requests per 15 minutes
+🌐 CORS: Restricted to allowed origins
 ```
 
 ---
@@ -237,16 +254,46 @@ You should see:
 
 ---
 
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+cd pdf-server
+npm test
+```
+
+Tests cover:
+- API endpoint functionality
+- Input validation and sanitization
+- Security measures (CORS, rate limiting)
+- Error handling and cleanup
+- Browser pool management
+
+---
+
 ## 🧯 Troubleshooting
 
 PDF not generating?
 - Make sure the server is running on http://localhost:3000
+- Check server logs for error messages
+- Verify browser pool isn't exhausted
 
 Preview not updating?
 - Reload the extension
+- Check Chrome DevTools console for errors
 
 Extension not loading?
 - Ensure Developer Mode is enabled in chrome://extensions
+- Check manifest.json for syntax errors
+
+Rate limiting issues?
+- Wait 15 minutes for limit to reset
+- Check if you're hitting the 20 requests per 15 minutes limit
+
+CORS errors?
+- Ensure your origin is in the allowed origins list
+- Check browser extension ID is correct
 
 
 ## 🧠 Design Principles
@@ -330,15 +377,30 @@ This repository now includes a **production-ready landing page** in the `website
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for detailed information.
 
-If you want to:
+### Quick Start
 
-* Improve UI/UX
-* Enhance PDF output
-* Add power features
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests: `cd pdf-server && npm test`
+5. Submit a pull request
 
-Open an issue or submit a PR.
+### Areas for Contribution
+
+- **UI/UX:** Improve the editor interface
+- **PDF Features:** Add new export options
+- **Performance:** Optimize browser pooling
+- **Security:** Enhance input validation
+- **Testing:** Improve test coverage
+- **Documentation:** Improve guides and examples
+
+### Development Resources
+
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [API Documentation](pdf-server/server.js)
 
 ---
 
