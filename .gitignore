@@ -89,3 +89,7 @@ jspm_packages/
 website/dist/
 website/build/
 website/.cache/
+
+# Local release artifacts
+md-to-perfect-pdf-v1.zip
+ORIGINAL_RESTORED_REPORT.md

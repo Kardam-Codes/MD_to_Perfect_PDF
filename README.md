@@ -4,7 +4,7 @@ Turn Markdown into **clean, beautiful, print‑ready PDFs** — with full contro
 
 This project is a **local-first Chrome Extension + PDF server** designed for people who care about *readability*, *formatting*, and *professional output*.
 
-🚀 **[Get it Free on Chrome Web Store](https://chrome.google.com/webstore/detail/md-to-perfect-pdf/EXTENSION_ID)**  
+🚀 **[Get it Free on Chrome Web Store](https://chrome.google.com/webstore/detail/md-to-perfect-pdf/YOUR_EXTENSION_ID)**  
 🌐 **[Visit our Landing Page](https://kardam-codes.github.io/MD_to_Perfect_PDF/website/)**
 
 ---
