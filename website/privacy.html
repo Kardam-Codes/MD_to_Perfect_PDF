@@ -1,304 +1,259 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - MD → Perfect PDF</title>
-    <meta name="description" content="Privacy Policy for MD → Perfect PDF Chrome Extension">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.png">
-    <link rel="shortcut icon" href="./assets/favicon.ico">
-    
-    <style>
-        :root {
-            --bg-primary: #020617;
-            --bg-secondary: #0f172a;
-            --bg-card: #1e293b;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #6366f1;
-            --border: #334155;
-            --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-sans);
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            padding: 2rem 0;
-            margin-bottom: 2rem;
-        }
-        
-        .header-content {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 600;
-            font-size: 1.25rem;
-        }
-        
-        .logo img {
-            border-radius: 4px;
-        }
-        
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .subtitle {
-            color: var(--text-secondary);
-        }
-        
-        main {
-            padding: 2rem 0;
-        }
-        
-        h2 {
-            font-size: 1.5rem;
-            margin: 2rem 0 1rem;
-            color: var(--accent);
-        }
-        
-        h3 {
-            font-size: 1.25rem;
-            margin: 1.5rem 0 0.5rem;
-        }
-        
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-        }
-        
-        ul {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-        
-        strong {
-            color: var(--text-primary);
-        }
-        
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .highlight-box {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-        
-        footer {
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border);
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-        }
-        
-        .footer-content {
-            color: var(--text-secondary);
-        }
-        
-        .footer-links {
-            margin-top: 1rem;
-        }
-        
-        .footer-links a {
-            color: var(--text-secondary);
-            margin: 0 1rem;
-        }
-        
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 0.75rem;
-            }
-            
-            h1 {
-                font-size: 1.75rem;
-            }
-            
-            h2 {
-                font-size: 1.25rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - MD to Perfect PDF</title>
+  <meta
+    name="description"
+    content="Privacy Policy for the MD to Perfect PDF Chrome Extension."
+  />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16.png" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" />
+  <style>
+    :root {
+      --bg: #08101f;
+      --panel: #111c32;
+      --card: #0d172b;
+      --text: #e6edf8;
+      --muted: #9fb0ca;
+      --accent: #63b3ff;
+      --border: #223454;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 5% -10%, #172847 0%, transparent 55%), var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(9, 15, 29, 0.75);
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      padding: 28px 0 22px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+
+    h1 {
+      margin: 12px 0 6px;
+      font-size: 34px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    main {
+      padding: 28px 0 36px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(18, 30, 52, 0.65), rgba(13, 23, 43, 0.9));
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .notice {
+      border-left: 3px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: rgba(99, 179, 255, 0.09);
+      color: var(--text);
+      margin: 14px 0 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px 0 30px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 680px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <img src="./assets/icon-128.png" alt="MD → Perfect PDF" width="32" height="32">
-                    <span>MD → Perfect PDF</span>
-                </div>
-            </div>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">Last updated: February 8, 2026</p>
-        </div>
-    </header>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <img src="./assets/icon-128.png" alt="MD to Perfect PDF" />
+        <span>MD to Perfect PDF</span>
+      </a>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Last updated: March 7, 2026</p>
+    </div>
+  </header>
 
-    <main>
-        <div class="container">
-            <h2>🔐 Our Privacy Promise</h2>
-            <p>MD → Perfect PDF is built with privacy as the foundation. We believe you should have control over your data, especially your documents. This privacy policy explains how we handle your information.</p>
+  <main>
+    <div class="container">
+      <section class="card">
+        <h2>Summary</h2>
+        <p>
+          MD to Perfect PDF is designed as a local-first tool. Markdown editing, preview, and
+          PDF preparation happen in the browser.
+        </p>
+        <p class="notice">
+          We do not sell personal data and we do not run analytics or ad trackers in the extension.
+        </p>
+      </section>
 
-            <div class="highlight-box">
-                <strong>TL;DR: We don't collect, store, or access any of your data. Everything happens locally on your machine.</strong>
-            </div>
+      <section class="card">
+        <h2>Data We Process</h2>
+        <ul>
+          <li>
+            <strong>Markdown content:</strong> The text you type or paste in the editor.
+          </li>
+          <li>
+            <strong>Local preferences:</strong> Theme, selected font, editor width, and similar UI settings.
+          </li>
+        </ul>
+      </section>
 
-            <h2>📊 Information We Collect</h2>
-            <p><strong>Nothing. Zero. Zilch.</strong></p>
-            <p>MD → Perfect PDF does not collect, transmit, or store any personal information, document content, or usage data. Your Markdown content never leaves your browser.</p>
+      <section class="card">
+        <h2>How Data Is Used</h2>
+        <ul>
+          <li>To render live preview and export your document to PDF.</li>
+          <li>To persist your settings and draft content in local browser storage.</li>
+          <li>To improve usability (for example, remembering your last layout and theme).</li>
+        </ul>
+      </section>
 
-            <h2>🖥️ How the Extension Works</h2>
-            <ul>
-                <li><strong>Local Processing:</strong> All Markdown-to-PDF conversion happens in your browser using JavaScript</li>
-                <li><strong>No Servers:</strong> We don't send your content to any external servers</li>
-                <li><strong>No Cloud Storage:</strong> Documents are not uploaded or stored in the cloud</li>
-                <li><strong>No Analytics:</strong> We don't track how you use the extension</li>
-                <li><strong>No Cookies:</strong> The extension doesn't use cookies or local storage for tracking</li>
-            </ul>
+      <section class="card">
+        <h2>Where Data Is Stored</h2>
+        <p>
+          Data is stored locally in Chrome extension storage on your device.
+          We do not transmit your document content to our servers in the current release.
+        </p>
+      </section>
 
-            <h2>🔒 Data Storage</h2>
-            <h3>Browser Extension Data</h3>
-            <p>The only data stored by the extension is:</p>
-            <ul>
-                <li>Your user preferences (theme, default export settings)</li>
-                <li>Temporary browser storage for the current document session</li>
-            </ul>
-            <p>This data is stored locally on your device and is never transmitted to us or any third party.</p>
+      <section class="card">
+        <h2>Permissions</h2>
+        <p>
+          The extension requests only the <strong>storage</strong> permission to save settings and draft content locally.
+        </p>
+      </section>
 
-            <h3>Document Content</h3>
-            <p>Your document content is stored only in browser memory during your session and is cleared when you:</p>
-            <ul>
-                <li>Close the extension popup</li>
-                <li>Navigate away from the page</li>
-                <li>Clear your browser data</li>
-            </ul>
+      <section class="card">
+        <h2>Third-Party Services</h2>
+        <p>
+          The extension package does not include analytics SDKs, ad SDKs, or remote executable code.
+        </p>
+      </section>
 
-            <h2>🌐 Third-Party Services</h2>
-            <p>We don't use any third-party services that could access your data, including:</p>
-            <ul>
-                <li><strong>No Analytics:</strong> No Google Analytics, Mixpanel, or similar tracking</li>
-                <li><strong>No CDN:</strong> All code is bundled with the extension</li>
-                <li><strong>No External Fonts:</strong> Uses system fonts to avoid external requests</li>
-                <li><strong>No Ads:</strong> No advertising networks or third-party scripts</li>
-            </ul>
+      <section class="card">
+        <h2>Your Control</h2>
+        <ul>
+          <li>You can remove the extension at any time.</li>
+          <li>You can clear extension data through Chrome settings.</li>
+          <li>You control what content is typed, saved, and exported.</li>
+        </ul>
+      </section>
 
-            <h2>🔄 Chrome Web Store Permissions</h2>
-            <p>The extension only requests the minimum permissions required to function:</p>
-            <ul>
-                <li><strong>Storage:</strong> To save your user preferences locally</li>
-                <li><strong>Active Tab:</strong> To function on web pages (if applicable)</li>
-            </ul>
-            <p>We do not and will never request access to:</p>
-            <ul>
-                <li>Your browsing history</li>
-                <Your personal information</li>
-                <li>Other extensions</li>
-                <li>System-wide permissions</li>
-            </ul>
+      <section class="card">
+        <h2>Contact</h2>
+        <p>
+          For privacy or support questions, open an issue on GitHub:
+          <a href="https://github.com/Kardam-Codes/MD_to_Perfect_PDF/issues">
+            https://github.com/Kardam-Codes/MD_to_Perfect_PDF/issues
+          </a>
+        </p>
+      </section>
 
-            <h2>📝 Document Security</h2>
-            <p>Your documents are secure because:</p>
-            <ul>
-                <li><strong>End-to-End Local:</strong> Content never leaves your browser</li>
-                <li><strong>No Network Requests:</strong> PDF generation works completely offline</li>
-                <li><strong>Memory Management:</strong> Sensitive data is cleared from memory when not needed</li>
-                <li><strong>No Persistence:</strong> Documents are not saved unless you explicitly download them</li>
-            </ul>
+      <section class="card">
+        <h2>Policy Updates</h2>
+        <p>
+          If this policy changes, we will update this page and revise the "Last updated" date above.
+        </p>
+      </section>
+    </div>
+  </main>
 
-            <h2>🔍 Chrome's Privacy Protections</h2>
-            <p>Chrome extensions are sandboxed and have strict security limitations:</p>
-            <ul>
-                <li>Extensions cannot access files on your computer</li>
-                <li>Extensions cannot access other extensions' data</li>
-                <li>Extensions cannot access browser passwords</li>
-                <li>All extension code is reviewed by Google Chrome Web Store</li>
-            </ul>
-
-            <h2>👥 Children's Privacy</h2>
-            <p>Our extension does not collect any personal information, so it is compliant with children's privacy regulations including COPPA.</p>
-
-            <h2>🌍 International Users</h2>
-            <p>Since we don't collect or transfer any data, our extension is compliant with international privacy regulations including GDPR, CCPA, and others.</p>
-
-            <h2>📞 Contact Us</h2>
-            <p>If you have privacy concerns or questions:</p>
-            <ul>
-                <li>Email: <a href="mailto:privacy@md-to-perfect-pdf.com">privacy@md-to-perfect-pdf.com</a></li>
-                <li>GitHub: <a href="https://github.com/your-username/md-to-perfect-pdf/issues">Create an Issue</a></li>
-            </ul>
-
-            <h2>🔄 Changes to This Policy</h2>
-            <p>If we ever change how we handle privacy, we will:</p>
-            <ul>
-                <li>Update this privacy policy with a clear "Last updated" date</li>
-                <li>Announce changes in the extension update notes</li>
-                <li>Never retroactively change our privacy practices</li>
-            </ul>
-
-            <div class="highlight-box">
-                <h3>💡 Our Commitment</h3>
-                <p>We are developers ourselves and understand the importance of privacy. MD → Perfect PDF will always remain a privacy-first tool that respects your data and your right to control it.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2026 MD → Perfect PDF</p>
-                <div class="footer-links">
-                    <a href="./index.html">Home</a>
-                    <a href="https://github.com/your-username/md-to-perfect-pdf">GitHub</a>
-                    <a href="mailto:contact@md-to-perfect-pdf.com">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="container">
+      <div>Copyright 2026 MD to Perfect PDF</div>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="https://github.com/Kardam-Codes/MD_to_Perfect_PDF">GitHub</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
+

@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add scroll animations for better UX
     initScrollAnimations();
     
-    // Track CTA button clicks (optional analytics)
-    initCTATracking();
-    
     // Add keyboard navigation
     initKeyboardNavigation();
+    
+    initHeaderScroll();
+    initEmailCopy();
+    initPerformanceMonitoring();
 });
 
 // Smooth scrolling for anchor links
@@ -68,30 +69,6 @@ function initScrollAnimations() {
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
-    });
-}
-
-// Track CTA button clicks (basic analytics without external services)
-function initCTATracking() {
-    const ctaButtons = document.querySelectorAll('.cta-button.primary[href*="chrome.google.com"]');
-    
-    ctaButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            // Store click in localStorage for basic analytics
-            const clicks = JSON.parse(localStorage.getItem('ctaClicks') || '[]');
-            clicks.push({
-                timestamp: Date.now(),
-                source: 'landing_page',
-                button: this.textContent.trim()
-            });
-            localStorage.setItem('ctaClicks', JSON.stringify(clicks));
-            
-            // Log to console for development (remove in production)
-            console.log('CTA clicked:', {
-                timestamp: new Date().toISOString(),
-                clicks: clicks.length
-            });
-        });
     });
 }
 
@@ -222,15 +199,7 @@ function initPerformanceMonitoring() {
 }
 
 // Initialize all features
-document.addEventListener('DOMContentLoaded', function() {
-    initSmoothScroll();
-    initScrollAnimations();
-    initCTATracking();
-    initKeyboardNavigation();
-    initHeaderScroll();
-    initEmailCopy();
-    initPerformanceMonitoring();
-});
+
 
 // Error handling
 window.addEventListener('error', function(e) {
