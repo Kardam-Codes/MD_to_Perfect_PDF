@@ -1,0 +1,56 @@
+name: Feature request
+description: Suggest an improvement for MD to Perfect PDF.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Clear use-cases help us prioritize.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve?
+      placeholder: I need faster export with predictable page breaks for long docs.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe your ideal behavior.
+      placeholder: Add a page-break marker preview mode before export.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds or other ideas you tried.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Area
+      options:
+        - label: Editor
+        - label: Preview
+        - label: Export modal
+        - label: PDF output
+        - label: Website/listing
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Mockups, examples, or links.
