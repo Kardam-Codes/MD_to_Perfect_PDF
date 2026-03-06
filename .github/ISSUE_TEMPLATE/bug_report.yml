@@ -1,0 +1,82 @@
+name: Bug report
+description: Report a reproducible problem in MD to Perfect PDF.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this issue. Please provide enough detail to reproduce it.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is the problem?
+      placeholder: Export modal closes, but no PDF is generated.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List exact steps.
+      placeholder: |
+        1. Open extension popup
+        2. Paste markdown
+        3. Click Export PDF
+        4. Select options and continue
+        5. Observe result
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      placeholder: PDF should open/print with selected theme and page size.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      placeholder: What actually happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Edge
+        - Brave
+        - Arc
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: extension_version
+    attributes:
+      label: Extension version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: "Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: markdown_sample
+    attributes:
+      label: Markdown sample
+      description: Paste a minimal sample that triggers the issue.
+      render: markdown
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add screenshots or PDF output notes if relevant.
